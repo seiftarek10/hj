@@ -42,6 +42,12 @@ dev_dependencies:
   very_good_analysis: ^7.0.0
 
 
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/threadly_Icon.png"
+
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 # The following section is specific to Flutter packages.
@@ -86,11 +92,4 @@ flutter_assets:
   filename: assets.dart
   field_prefix:
 
-flutter_launcher_icons:
-  android: true
-  ios: true
-  image_path: assets/images/threadly_Icon.png
-  remove_alpha_ios: true
-  adaptive_icon_background: "#ffffff" 
-  adaptive_icon_foreground: assets/images/threadly_Icon.png
 
