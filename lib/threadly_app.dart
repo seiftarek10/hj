@@ -18,7 +18,7 @@ class ThreadlyApp extends StatelessWidget {
               return SafeArea(
                 child: Scaffold(
                   appBar: AppBar(
-                    backgroundColor: Colors.green,
+                    backgroundColor: Colors.blue,
                   ),
                   body: Builder(
                     builder: (context) {
