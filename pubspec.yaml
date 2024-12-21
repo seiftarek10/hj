@@ -33,7 +33,8 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_dotenv: ^5.2.1
-  
+  flutter_native_splash: ^2.4.3
+
 dev_dependencies:
   flutter_launcher_icons: ^0.14.2
   flutter_lints: ^4.0.0
@@ -41,12 +42,10 @@ dev_dependencies:
     sdk: flutter
   very_good_analysis: ^7.0.0
 
-
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/images/threadly_Icon.png"
-
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -85,11 +84,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
-
 flutter_assets:
   assets_path: assets/images
   output_path: lib/Core/Assets/
   filename: assets.dart
-  field_prefix:
-
-
+  field_prefix: null

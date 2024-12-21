@@ -13,13 +13,31 @@ class ThreadlyApp extends StatelessWidget {
       builder: (_, value, __) {
         if (value) {
           return MaterialApp(
+            home: Scaffold(
+              body: Column(
+                children: [
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.black,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.red,
+                  ),
+                  Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.purple,
+                  ),
+                ],
+              ),
+            ),
             debugShowCheckedModeBanner: EnvVariables.instance.envType,
             builder: (context, widget) {
               return SafeArea(
                 child: Scaffold(
-                  appBar: AppBar(
-                    backgroundColor: Colors.blue,
-                  ),
                   body: Builder(
                     builder: (context) {
                       ConnectivityController.instance.init();
