@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:threadly/Core/App/connectivity_controller.dart';
 import 'package:threadly/Core/App/env_variables.dart';
+import 'package:threadly/Core/Routes/routes.dart';
+import 'package:threadly/Core/Routes/routes_names.dart';
 import 'package:threadly/Core/Screens/no_network_screen.dart';
 
 class ThreadlyApp extends StatelessWidget {
@@ -13,27 +15,8 @@ class ThreadlyApp extends StatelessWidget {
       builder: (_, value, __) {
         if (value) {
           return MaterialApp(
-            home: Scaffold(
-              body: Column(
-                children: [
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.black,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.red,
-                  ),
-                  Container(
-                    height: 100,
-                    width: 100,
-                    color: Colors.purple,
-                  ),
-                ],
-              ),
-            ),
+            initialRoute: RoutesNames.testOne,
+            onGenerateRoute: AppRoutes.onGenerateRoute,
             debugShowCheckedModeBanner: EnvVariables.instance.envType,
             builder: (context, widget) {
               return SafeArea(
