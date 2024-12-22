@@ -28,7 +28,10 @@ class ThreadlyApp extends StatelessWidget {
             onGenerateRoute: AppRoutes.onGenerateRoute,
             debugShowCheckedModeBanner: EnvVariables.instance.envType,
             builder: (context, widget) {
-              return SafeArea(
+              return GestureDetector(
+                onTap: () {
+                  FocusManager.instance.primaryFocus?.unfocus();
+                },
                 child: Scaffold(
                   body: Builder(
                     builder: (context) {
