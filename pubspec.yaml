@@ -33,6 +33,9 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_dotenv: ^5.2.1
+  flutter_localization: ^0.3.0
+  flutter_localizations:
+    sdk: flutter
   flutter_native_splash: ^2.4.3
 
 dev_dependencies:
@@ -61,6 +64,8 @@ flutter:
     - .env.prod
     - .env.dev
     - assets/images/
+    - languages/ar.json
+    - languages/en.json
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
   # For details regarding adding assets from package dependencies, see

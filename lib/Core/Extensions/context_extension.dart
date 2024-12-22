@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threadly/Core/Languages/app_localizations.dart';
 import 'package:threadly/Core/Style/Theme/colors_theme_extension.dart';
 
 extension ContextExtension on BuildContext {
@@ -24,6 +25,11 @@ extension ContextExtension on BuildContext {
     );
   }
 
-  //Colors
+  // * colos
   AppColors get color => Theme.of(this).extension<AppColors>()!;
+
+  // * trnslate
+  String translate({required String wordKey}) {
+    return AppLocalizations.of(this)!.translate(wordKey)!;
+  }
 }

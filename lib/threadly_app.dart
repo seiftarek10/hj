@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:threadly/Core/App/connectivity_controller.dart';
 import 'package:threadly/Core/App/env_variables.dart';
+import 'package:threadly/Core/Languages/app_localization_setup.dart';
 import 'package:threadly/Core/Routes/routes.dart';
 import 'package:threadly/Core/Routes/routes_names.dart';
 import 'package:threadly/Core/Screens/no_network_screen.dart';
@@ -18,6 +19,12 @@ class ThreadlyApp extends StatelessWidget {
           return MaterialApp(
             initialRoute: RoutesNames.testOne,
             theme: darkTheme(),
+            locale: const Locale('en'),
+            supportedLocales: AppLocalizationsSetup.supportedLocales,
+            localizationsDelegates:
+                AppLocalizationsSetup.localizationsDelegates,
+            localeResolutionCallback:
+                AppLocalizationsSetup.localeResolutionCallback,
             onGenerateRoute: AppRoutes.onGenerateRoute,
             debugShowCheckedModeBanner: EnvVariables.instance.envType,
             builder: (context, widget) {
