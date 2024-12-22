@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:threadly/Core/Extensions/context_extension.dart';
+import 'package:threadly/Core/Languages/lang_keys.dart';
 
 class TestOne extends StatelessWidget {
   const TestOne({super.key});
@@ -8,10 +9,11 @@ class TestOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          color: context.color.mainColor,
-          height: 100,
-          width: 100,
+        child: Center(
+          child: Text(
+            context.translate(wordKey: LangKeys.appName),
+            style: const TextStyle(color: Colors.white, fontSize: 40),
+          ),
         ),
       ),
     );

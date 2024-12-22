@@ -43,17 +43,18 @@ class AppColors extends ThemeExtension<AppColors> {
     Color? containerLinear2,
   }) {
     return AppColors(
-        mainColor: mainColor,
-        bluePinkDark: bluePinkDark,
-        bluePinkLight: bluePinkLight,
-        textColor: textColor,
-        textFormBorder: textFormBorder,
-        navBarbg: navBarbg,
-        navBarSelectedTab: navBarSelectedTab,
-        containerShadow1: containerShadow1,
-        containerShadow2: containerShadow2,
-        containerLinear1: containerLinear1,
-        containerLinear2: containerLinear2);
+      mainColor: mainColor,
+      bluePinkDark: bluePinkDark,
+      bluePinkLight: bluePinkLight,
+      textColor: textColor,
+      textFormBorder: textFormBorder,
+      navBarbg: navBarbg,
+      navBarSelectedTab: navBarSelectedTab,
+      containerShadow1: containerShadow1,
+      containerShadow2: containerShadow2,
+      containerLinear1: containerLinear1,
+      containerLinear2: containerLinear2,
+    );
   }
 
   @override
@@ -66,17 +67,18 @@ class AppColors extends ThemeExtension<AppColors> {
     }
 
     return AppColors(
-        mainColor: mainColor,
-        bluePinkDark: bluePinkDark,
-        bluePinkLight: bluePinkLight,
-        textColor: textColor,
-        textFormBorder: textFormBorder,
-        navBarbg: navBarbg,
-        navBarSelectedTab: navBarSelectedTab,
-        containerShadow1: containerShadow1,
-        containerShadow2: containerShadow2,
-        containerLinear1: containerLinear1,
-        containerLinear2: containerLinear2);
+      mainColor: mainColor,
+      bluePinkDark: bluePinkDark,
+      bluePinkLight: bluePinkLight,
+      textColor: textColor,
+      textFormBorder: textFormBorder,
+      navBarbg: navBarbg,
+      navBarSelectedTab: navBarSelectedTab,
+      containerShadow1: containerShadow1,
+      containerShadow2: containerShadow2,
+      containerLinear1: containerLinear1,
+      containerLinear2: containerLinear2,
+    );
   }
 
   static const AppColors darkColors = AppColors(
