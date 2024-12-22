@@ -64,6 +64,8 @@ flutter:
     - .env.prod
     - .env.dev
     - assets/images/
+    - assets/svg/
+    - assets/icons/
     - languages/ar.json
     - languages/en.json
   # An image asset can refer to one or more resolution-specific "variants", see
