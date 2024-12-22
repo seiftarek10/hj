@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:threadly/Core/Style/Theme/colors_theme_extension.dart';
 
 extension ContextExtension on BuildContext {
   Future<Route<dynamic>?> pushName({
@@ -22,4 +23,7 @@ extension ContextExtension on BuildContext {
       arguments: arguments,
     );
   }
+
+  //Colors
+  AppColors get color => Theme.of(this).extension<AppColors>()!;
 }
