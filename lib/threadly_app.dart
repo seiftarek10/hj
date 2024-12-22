@@ -4,6 +4,7 @@ import 'package:threadly/Core/App/env_variables.dart';
 import 'package:threadly/Core/Routes/routes.dart';
 import 'package:threadly/Core/Routes/routes_names.dart';
 import 'package:threadly/Core/Screens/no_network_screen.dart';
+import 'package:threadly/Core/Style/Theme/app_theme.dart';
 
 class ThreadlyApp extends StatelessWidget {
   const ThreadlyApp({super.key});
@@ -16,6 +17,7 @@ class ThreadlyApp extends StatelessWidget {
         if (value) {
           return MaterialApp(
             initialRoute: RoutesNames.testOne,
+            theme: darkTheme(),
             onGenerateRoute: AppRoutes.onGenerateRoute,
             debugShowCheckedModeBanner: EnvVariables.instance.envType,
             builder: (context, widget) {
